@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.dvd.xposed.showactivitynametoast"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.dvd.android.xposed.showactivitynametoast"
+    android:versionCode="2"
+    android:versionName="1.1" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -24,16 +24,6 @@
             android:name="xposeddescription"
             android:value="This module shows a toast at every opened activity." />
     
-        <activity
-            android:name=".MainActivity"
-            android:excludeFromRecents="true"
-        	android:label="Show Activity Name in toast" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                
-                <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
